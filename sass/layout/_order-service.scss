@@ -1,0 +1,24 @@
+.order-service {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 197px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/order-service-bg.jpg);
+    background-color: var(--secondary-background-color);
+}
+
+.order-service-title {
+    width: 696px;
+    margin: 0 auto 30px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--first-background-color);
+}
