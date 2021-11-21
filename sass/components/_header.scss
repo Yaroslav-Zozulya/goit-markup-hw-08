@@ -101,3 +101,39 @@
     width: 10px;
     height: 16px;
 }
+
+.mobile-menu-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: none;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    line-height: 0;
+}
+.mobile-menu-button-icon {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 480px) {
+    .mobile-menu-button {
+        display: block;
+    }
+    .navigation {
+        display: none;
+    }
+    .contacts {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .logo--header {
+        margin: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
