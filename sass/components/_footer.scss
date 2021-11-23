@@ -5,28 +5,55 @@
 }
 
 .footer-container {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+}
+
+.footer-container-wrapper {
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .footer-address-wrap {
-    margin-right: 70px;
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+    }
 }
 
 .footer-address {
+    margin-bottom: 60px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }
 
 .footer-address-item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .footer-address-text {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
     color: var(--first-background-color);
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .footer-address-link {
@@ -41,6 +68,12 @@
 
 .logo-footer span {
     color: var(--first-background-color);
+}
+.footer-social {
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }
 
 .footer-social-title {
@@ -68,8 +101,10 @@
 }
 
 .footer-form {
-    margin-right: 0;
-    margin-left: auto;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .footer-form-title {
@@ -83,10 +118,10 @@
 }
 
 .footer-form-input {
-    min-width: 358px;
+    width: 100%;
     min-height: 50px;
     padding: 15px 16px;
-    margin-right: 12px;
+    margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -95,6 +130,16 @@
 
     &:focus {
         outline: none;
+    }
+    @media screen and (min-width: 768px) {
+        display: block;
+        width: 450px;
+        margin: 0 auto 20px;
+    }
+    @media screen and (min-width: 1200px) {
+        display: inline;
+        width: 358px;
+        margin: 0 12px 0 0;
     }
 }
 
