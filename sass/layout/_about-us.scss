@@ -8,13 +8,13 @@
 .about-us-list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
+    margin-left: -30px;
 }
 
 .about-us-item {
     position: relative;
     flex-basis: calc(100% / 3 - 30px);
-    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .about-us-text-wrap {
