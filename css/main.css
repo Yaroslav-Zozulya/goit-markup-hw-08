@@ -1439,10 +1439,10 @@ img {
 }
 
 .mobile-navigation-link {
+  display: block;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.76;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--primery-title-color);
   transition: color 250ms var(--transition-timing);
