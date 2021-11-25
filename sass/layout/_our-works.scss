@@ -60,6 +60,7 @@
 .our-work-item {
     margin-bottom: 30px;
     @media screen and (min-width: 768px) {
+        display: flex;
         flex-basis: calc(100% / 2 - 30px);
         margin-left: 30px;
     }
@@ -69,13 +70,17 @@
 }
 
 .our-work-link {
-    display: block;
+    // display: block;
     transition: box-shadow 250ms var(--transition-timing);
 
     &:hover,
     &:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
             0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -110,6 +115,9 @@
     border-bottom: 1px solid var(--our-work-item-border);
     border-left: 1px solid var(--our-work-item-border);
     background-color: var(--first-background-color);
+    @media screen and(min-width:768px) {
+        flex-grow: 1;
+    }
 }
 
 .our-works-title {

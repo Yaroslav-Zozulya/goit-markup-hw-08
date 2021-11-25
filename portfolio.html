@@ -73,11 +73,72 @@
                         >
                     </li>
                 </ul>
-                <button class="mobile-menu-button" type="button">
+                <button type="button" class="mobile-menu-button mob-menu--open">
                     <svg class="mobile-menu-button-icon">
                         <use href="./img/icons.svg#icon-menu"></use>
                     </svg>
                 </button>
+            </div>
+            <div class="mobile-menu mob-menu is-hidden">
+                <button
+                    class="mobile-menu-button-close mob-menu--close"
+                    type="button"
+                >
+                    <svg class="mobile-menu-button-close-icon">
+                        <use href="./img/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-navigation">
+                    <ul class="mobile-navigation-list">
+                        <li class="mobile-navigation-item">
+                            <a
+                                class="mobile-navigation-link"
+                                href="./index.html"
+                                >Студия</a
+                            >
+                        </li>
+                        <li class="mobile-navigation-item">
+                            <a
+                                class="mobile-navigation-link"
+                                href="./portfolio.html"
+                                >Портфолио</a
+                            >
+                        </li>
+                        <li class="mobile-navigation-item">
+                            <a class="mobile-navigation-link" href=""
+                                >Контакты</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-contacts-wrapper">
+                    <ul class="mobile-contacts">
+                        <li class="mobile-contacts-item">
+                            <a class="mobile-contacts-phone" href=""
+                                >+38 096 111 11 11</a
+                            >
+                        </li>
+                        <li class="mobile-contacts-item">
+                            <a class="mobile-contacts-email" href=""
+                                >info@devstudio.com</a
+                            >
+                        </li>
+                    </ul>
+                    <ul class="mobile-social">
+                        <li class="mobile-social-item">
+                            <a class="mobile-social-link" href="">Instagram</a>
+                        </li>
+                        <li class="mobile-social-item">
+                            <a class="mobile-social-link" href="">Twitter</a>
+                        </li>
+                        <li class="mobile-social-item">
+                            <a class="mobile-social-link" href="">Facebook</a>
+                        </li>
+                        <li class="mobile-social-item">
+                            <a class="mobile-social-link" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
         <main>
@@ -118,10 +179,58 @@
                         <li class="our-work-item">
                             <a href="#" class="our-work-link">
                                 <div class="our-work-img-wrap">
-                                    <img
-                                        src="./img/portfolio-img/techno-crack.jpg"
-                                        alt="ноутбук с превью сайта"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/projects/project-1-desktop.webp    1x,
+                                                ./img/projects/project-1-desktop@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/projects/project-1-desktop.jpg    1x,
+                                                ./img/projects/project-1-desktop@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/projects/project-1-tablet.webp    1x,
+                                                ./img/projects/project-1-tablet@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/projects/project-1-tablet.jpg    1x,
+                                                ./img/projects/project-1-tablet@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 280px)"
+                                            srcset="
+                                                ./img/projects/project-1.webp    1x,
+                                                ./img/projects/project-1@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 280px)"
+                                            srcset="
+                                                ./img/projects/project-1.jpg    1x,
+                                                ./img/projects/project-1@2x.jpg 2x
+                                            "
+                                        />
+                                        <img
+                                            src="./img/projects/project-1.jpg"
+                                            alt="Пример веб-сайта"
+                                            loading="lazy"
+                                        />
+                                    </picture>
                                     <p class="our-work-img-text">
                                         Технокряк это современная площадка
                                         распространения коронавируса. Компании
@@ -139,10 +248,58 @@
                         <li class="our-work-item">
                             <a href="#" class="our-work-link">
                                 <div class="our-work-img-wrap">
-                                    <img
-                                        src="./img/portfolio-img/poster.jpg"
-                                        alt="банер с баскетболистами"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/projects/project-2-desktop.webp    1x,
+                                                ./img/projects/project-2-desktop@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/projects/project-2-desktop.jpg    1x,
+                                                ./img/projects/project-2-desktop@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/projects/project-2-tablet.webp    1x,
+                                                ./img/projects/project-2-tablet@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/projects/project-2-tablet.jpg    1x,
+                                                ./img/projects/project-2-tablet@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 280px)"
+                                            srcset="
+                                                ./img/projects/project-2.webp    1x,
+                                                ./img/projects/project-2@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 280px)"
+                                            srcset="
+                                                ./img/projects/project-2.jpg    1x,
+                                                ./img/projects/project-2@2x.jpg 2x
+                                            "
+                                        />
+                                        <img
+                                            src="./img/projects/project-2.jpg"
+                                            alt="Пример веб-сайта"
+                                            loading="lazy"
+                                        />
+                                    </picture>
                                     <p class="our-work-img-text">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Libero modi eveniet
@@ -164,10 +321,58 @@
                         <li class="our-work-item">
                             <a href="#" class="our-work-link">
                                 <div class="our-work-img-wrap">
-                                    <img
-                                        src="./img/portfolio-img/seafood.jpg"
-                                        alt="логотип ресторана"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/projects/project-3-desktop.webp    1x,
+                                                ./img/projects/project-3-desktop@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/projects/project-3-desktop.jpg    1x,
+                                                ./img/projects/project-3-desktop@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/projects/project-3-tablet.webp    1x,
+                                                ./img/projects/project-3-tablet@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/projects/project-3-tablet.jpg    1x,
+                                                ./img/projects/project-3-tablet@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 280px)"
+                                            srcset="
+                                                ./img/projects/project-3.webp    1x,
+                                                ./img/projects/project-3@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 280px)"
+                                            srcset="
+                                                ./img/projects/project-3.jpg    1x,
+                                                ./img/projects/project-3@2x.jpg 2x
+                                            "
+                                        />
+                                        <img
+                                            src="./img/projects/project-3.jpg"
+                                            alt="Пример веб-сайта"
+                                            loading="lazy"
+                                        />
+                                    </picture>
                                     <p class="our-work-img-text">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Libero modi eveniet
@@ -186,10 +391,58 @@
                         <li class="our-work-item">
                             <a href="#" class="our-work-link">
                                 <div class="our-work-img-wrap">
-                                    <img
-                                        src="./img/portfolio-img/project-prime.jpg"
-                                        alt="наушники"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/projects/project-4-desktop.webp    1x,
+                                                ./img/projects/project-4-desktop@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/projects/project-4-desktop.jpg    1x,
+                                                ./img/projects/project-4-desktop@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/projects/project-4-tablet.webp    1x,
+                                                ./img/projects/project-4-tablet@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/projects/project-4-tablet.jpg    1x,
+                                                ./img/projects/project-4-tablet@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 280px)"
+                                            srcset="
+                                                ./img/projects/project-4.webp    1x,
+                                                ./img/projects/project-4@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 280px)"
+                                            srcset="
+                                                ./img/projects/project-4.jpg    1x,
+                                                ./img/projects/project-4@2x.jpg 2x
+                                            "
+                                        />
+                                        <img
+                                            src="./img/projects/project-4.jpg"
+                                            alt="Пример веб-сайта"
+                                            loading="lazy"
+                                        />
+                                    </picture>
                                     <p class="our-work-img-text">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Libero modi eveniet
@@ -208,10 +461,58 @@
                         <li class="our-work-item">
                             <a href="#" class="our-work-link">
                                 <div class="our-work-img-wrap">
-                                    <img
-                                        src="./img/portfolio-img/project-boxes.jpg"
-                                        alt="две коробки"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/projects/project-5-desktop.webp    1x,
+                                                ./img/projects/project-5-desktop@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/projects/project-5-desktop.jpg    1x,
+                                                ./img/projects/project-5-desktop@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/projects/project-5-tablet.webp    1x,
+                                                ./img/projects/project-5-tablet@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/projects/project-5-tablet.jpg    1x,
+                                                ./img/projects/project-5-tablet@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 280px)"
+                                            srcset="
+                                                ./img/projects/project-5.webp    1x,
+                                                ./img/projects/project-5@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 280px)"
+                                            srcset="
+                                                ./img/projects/project-5.jpg    1x,
+                                                ./img/projects/project-5@2x.jpg 2x
+                                            "
+                                        />
+                                        <img
+                                            src="./img/projects/project-5.jpg"
+                                            alt="Пример веб-сайта"
+                                            loading="lazy"
+                                        />
+                                    </picture>
                                     <p class="our-work-img-text">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Libero modi eveniet
@@ -230,10 +531,58 @@
                         <li class="our-work-item">
                             <a href="#" class="our-work-link">
                                 <div class="our-work-img-wrap">
-                                    <img
-                                        src="./img/portfolio-img/inspiration-borders.jpg"
-                                        alt="монитор"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/projects/project-6-desktop.webp    1x,
+                                                ./img/projects/project-6-desktop@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/projects/project-6-desktop.jpg    1x,
+                                                ./img/projects/project-6-desktop@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/projects/project-6-tablet.webp    1x,
+                                                ./img/projects/project-6-tablet@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/projects/project-6-tablet.jpg    1x,
+                                                ./img/projects/project-6-tablet@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 280px)"
+                                            srcset="
+                                                ./img/projects/project-6.webp    1x,
+                                                ./img/projects/project-6@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 280px)"
+                                            srcset="
+                                                ./img/projects/project-6.jpg    1x,
+                                                ./img/projects/project-6@2x.jpg 2x
+                                            "
+                                        />
+                                        <img
+                                            src="./img/projects/project-6.jpg"
+                                            alt="Пример веб-сайта"
+                                            loading="lazy"
+                                        />
+                                    </picture>
                                     <p class="our-work-img-text">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Libero modi eveniet
@@ -252,10 +601,58 @@
                         <li class="our-work-item">
                             <a href="#" class="our-work-link">
                                 <div class="our-work-img-wrap">
-                                    <img
-                                        src="./img/portfolio-img/limited-edition.jpg"
-                                        alt="развёрнутая книга"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/projects/project-7-desktop.webp    1x,
+                                                ./img/projects/project-7-desktop@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/projects/project-7-desktop.jpg    1x,
+                                                ./img/projects/project-7-desktop@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/projects/project-7-tablet.webp    1x,
+                                                ./img/projects/project-7-tablet@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/projects/project-7-tablet.jpg    1x,
+                                                ./img/projects/project-7-tablet@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 280px)"
+                                            srcset="
+                                                ./img/projects/project-7.webp    1x,
+                                                ./img/projects/project-7@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 280px)"
+                                            srcset="
+                                                ./img/projects/project-7.jpg    1x,
+                                                ./img/projects/project-7@2x.jpg 2x
+                                            "
+                                        />
+                                        <img
+                                            src="./img/projects/project-7.jpg"
+                                            alt="Пример веб-сайта"
+                                            loading="lazy"
+                                        />
+                                    </picture>
                                     <p class="our-work-img-text">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Libero modi eveniet
@@ -275,10 +672,58 @@
                         <li class="our-work-item">
                             <a href="#" class="our-work-link">
                                 <div class="our-work-img-wrap">
-                                    <img
-                                        src="./img/portfolio-img/project-lab.jpg"
-                                        alt="бирка с названием компании"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/projects/project-8-desktop.webp    1x,
+                                                ./img/projects/project-8-desktop@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/projects/project-8-desktop.jpg    1x,
+                                                ./img/projects/project-8-desktop@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/projects/project-8-tablet.webp    1x,
+                                                ./img/projects/project-8-tablet@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/projects/project-8-tablet.jpg    1x,
+                                                ./img/projects/project-8-tablet@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 280px)"
+                                            srcset="
+                                                ./img/projects/project-8.webp    1x,
+                                                ./img/projects/project-8@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 280px)"
+                                            srcset="
+                                                ./img/projects/project-8.jpg    1x,
+                                                ./img/projects/project-8@2x.jpg 2x
+                                            "
+                                        />
+                                        <img
+                                            src="./img/projects/project-8.jpg"
+                                            alt="Пример веб-сайта"
+                                            loading="lazy"
+                                        />
+                                    </picture>
                                     <p class="our-work-img-text">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Libero modi eveniet
@@ -297,10 +742,58 @@
                         <li class="our-work-item">
                             <a href="#" class="our-work-link">
                                 <div class="our-work-img-wrap">
-                                    <img
-                                        src="./img/portfolio-img/growing-business.jpg"
-                                        alt="человек печатает на ноутбуке"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/projects/project-9-desktop.webp    1x,
+                                                ./img/projects/project-9-desktop@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/projects/project-9-desktop.jpg    1x,
+                                                ./img/projects/project-9-desktop@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/projects/project-9-tablet.webp    1x,
+                                                ./img/projects/project-9-tablet@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/projects/project-9-tablet.jpg    1x,
+                                                ./img/projects/project-9-tablet@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 280px)"
+                                            srcset="
+                                                ./img/projects/project-9.webp    1x,
+                                                ./img/projects/project-9@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 280px)"
+                                            srcset="
+                                                ./img/projects/project-9.jpg    1x,
+                                                ./img/projects/project-9@2x.jpg 2x
+                                            "
+                                        />
+                                        <img
+                                            src="./img/projects/project-9.jpg"
+                                            alt="Пример веб-сайта"
+                                            loading="lazy"
+                                        />
+                                    </picture>
                                     <p class="our-work-img-text">
                                         Lorem ipsum dolor sit amet consectetur
                                         adipisicing elit. Libero modi eveniet
@@ -431,5 +924,6 @@
                 </form>
             </div>
         </footer>
+        <script src="./js/mobile-menu.js"></script>
     </body>
 </html>
