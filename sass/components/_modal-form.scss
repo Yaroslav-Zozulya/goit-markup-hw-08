@@ -16,7 +16,8 @@
     width: 18px;
     height: 18px;
 
-    &:hover {
+    .modal-btn:hover &,
+    .modal-btn:focus & {
         fill: var(--links-hover-color);
     }
 }

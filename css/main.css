@@ -230,7 +230,8 @@ img {
   height: 18px;
 }
 
-.modal-close:hover {
+.modal-btn:hover .modal-close,
+.modal-btn:focus .modal-close {
   fill: var(--links-hover-color);
 }
 
