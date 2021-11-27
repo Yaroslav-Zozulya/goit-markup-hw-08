@@ -129,6 +129,20 @@
     }
 }
 
+.contacts__link--email {
+    padding-top: 21px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+    }
+}
+
+.contacts__link--phone {
+    padding-bottom: 21px;
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 32px;
+    }
+}
+
 .contacts__icon {
     @media screen and(min-width:768px) {
         // margin-right: 10px;
@@ -174,4 +188,9 @@
 .mobile-menu-button-icon {
     width: 40px;
     height: 40px;
+    transition: fill 250ms var(--transition-timing);
+    .mobile-menu-button:hover &,
+    .mobile-menu-button:focus & {
+        fill: var(--links-hover-color);
+    }
 }
