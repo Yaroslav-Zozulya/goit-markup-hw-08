@@ -922,7 +922,9 @@ img {
 
 @media screen and (min-width: 1200px) {
   .order-service {
+    max-width: 1600px;
     height: 600px;
+    margin: 0 auto;
   }
 }
 
