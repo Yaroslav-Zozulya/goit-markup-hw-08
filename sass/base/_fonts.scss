@@ -3,6 +3,7 @@
     src: local('RobotoRegular'), local('RobotoRegular'),
         url(../fonts/Roboto/Roboto-Regular.ttf);
     font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
     src: local('RobotoMedium'), local('RobotoMedium'),
         url(../fonts/Roboto/Roboto-Medium.ttf);
     font-weight: 500;
+    font-display: swap;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
     src: local('RobotoBold'), local('RobotoBold'),
         url(../fonts/Roboto/Roboto-Bold.ttf);
     font-weight: 700;
+    font-display: swap;
 }
 
 @font-face {
@@ -24,6 +27,7 @@
     src: local('RobotoBlack'), local('RobotoBlack'),
         url(../fonts/Roboto/Roboto-Black.ttf);
     font-weight: 900;
+    font-display: swap;
 }
 
 @font-face {
@@ -31,4 +35,5 @@
     src: local('RalewayBold'), local('RalewayBold'),
         url(../fonts/Raleway/Raleway-Bold.ttf);
     font-weight: 700;
+    font-display: swap;
 }
