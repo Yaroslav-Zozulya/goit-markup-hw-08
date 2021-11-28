@@ -24,6 +24,23 @@
             url(../img/order-service-bg-mobile@2x.jpg);
     }
 
+    @supports (background: url(../img/order-service-bg-mobile.webp)) {
+        background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url(../img/order-service-bg-mobile.webp);
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient(
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+                ),
+                url(../img/order-service-bg-mobile@2x.webp);
+        }
+    }
     @media screen and (min-width: 481px) {
         background-image: linear-gradient(
                 rgba(47, 48, 58, 0.4),
@@ -40,6 +57,23 @@
                     rgba(47, 48, 58, 0.4)
                 ),
                 url(../img/order-service-bg-tablet@2x.jpg);
+        }
+        @supports (background: url(../img/order-service-bg-tablet.webp)) {
+            background-image: linear-gradient(
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+                ),
+                url(../img/order-service-bg-tablet.webp);
+            @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: linear-gradient(
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)
+                    ),
+                    url(../img/order-service-bg-tablet@2x.webp);
+            }
         }
     }
 
@@ -58,6 +92,23 @@
                     rgba(47, 48, 58, 0.4)
                 ),
                 url(../img/order-service-bg@2x.jpg);
+        }
+        @supports (background: url(../img/order-service-bg.webp)) {
+            background-image: linear-gradient(
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)
+                ),
+                url(../img/order-service-bg.webp);
+            @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: linear-gradient(
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)
+                    ),
+                    url(../img/order-service-bg@2x.webp);
+            }
         }
     }
     @media screen and (min-width: 1200px) {
